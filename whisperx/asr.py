@@ -320,8 +320,11 @@ def load_model(whisper_arch,
         "prepend_punctuations": "\"'“¿([{-",
         "append_punctuations": "\"'.。,，!！?？:：”)]}、",
         "suppress_numerals": False,
+        "max_new_tokens": None,
+        "clip_timestamps": None,
+        "hallucination_silence_threshold": None,
     }
-#"no_speech_threshold": 0.7
+#"no_speech_threshold": 0.6
     if asr_options is not None:
         default_asr_options.update(asr_options)
 
