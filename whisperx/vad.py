@@ -94,7 +94,7 @@ class Binarize:
 
     def __init__(
         self,
-        onset: float = 0.5,
+        onset: float = 0.05,
         offset: Optional[float] = None,
         min_duration_on: float = 0.0,
         min_duration_off: float = 0.0,
@@ -265,7 +265,7 @@ def merge_vad(vad_arr, pad_onset=0.0, pad_offset=0.0, min_duration_off=0.0, min_
 def merge_chunks(
     segments,
     chunk_size,
-    onset: float = 0.5,
+    onset: float = 0.05,
     offset: Optional[float] = None,
 ):
     """
