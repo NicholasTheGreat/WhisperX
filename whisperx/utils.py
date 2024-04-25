@@ -243,7 +243,7 @@ class SubtitlesWriter(ResultWriter):
                     timing = original_timing.copy()
                     long_pause = not preserve_segments
                     if "start" in timing:
-                        long_pause = long_pause and timing["start"] - last > 3.0
+                        long_pause = long_pause and timing["start"] - last > 1.5
                     else:
                         long_pause = False
                     has_room = line_len + len(timing["word"]) <= max_line_width
