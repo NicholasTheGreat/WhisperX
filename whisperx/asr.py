@@ -334,8 +334,8 @@ def load_model(whisper_arch,
     default_asr_options = faster_whisper.transcribe.TranscriptionOptions(**default_asr_options)
 
     default_vad_options = {
-        "vad_onset": 0.050,
-        "vad_offset": 0.050
+        "vad_onset": 0.10,
+        "vad_offset": 0.05
     }
 #"vad_onset": 0.500, "vad_offset": 0.500
     if vad_options is not None:
